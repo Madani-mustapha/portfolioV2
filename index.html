@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script defer src="app.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles2.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <!------------- Navbar ------------->
+    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#"><strong>MADANI</strong>MUSTAPHA</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about-me-section">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#timeline">My Story</a>
+                    </li>
+                    <li class="nav-item">
+                        <Button type="button" class="btn btn-outline-success"
+                            onclick="scrollToSection('contact-me-section')">Let's Connect</Button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!------------- Banner ------------->
+    <div class="banner">
+        <img src="src/photos/banner.png" alt="">
+    </div>
+
+    <!------------- About ------------->
+
+    <h3 id="about-me-section" style="text-align: center; margin-top: 40px;">I Am MADANI Mustapha</h3>
+    <div class="banner-about">
+        <div class="sec1-about photo-about">
+            <img src="src/photos/photo1.png" alt="">
+            <p>Electromechanical Engineer</p>
+        </div>
+        <div class="sec2-about photo-about">
+            <img src="src/photos/photo2.png" alt="">
+            <p>Web Developer</p>
+        </div>
+        <div class="sec3-about photo-about">
+            <img src="src/photos/guitare.png" alt="">
+            <p>Guitar Player</p>
+        </div>
+
+    </div>
+    <!------------- TimeLine ------------->
+
+    <h3 style="text-align: center; margin-top: 40px;">My Story</h3>
+
+    <div id="timeline" class="timeline">
+
+        <!-- Lycee -->
+        <div class="container-about left-container">
+            <div class="divYearLeft">2012</div>
+            <div class="round-left"></div>
+            <div class="text-box">
+                <img src="src/logos/Lycee_technique_colored.png" class="logo_main">
+                <h2>BAC - STE</h2>
+                <small>Lycee Technique Errachidia</small>
+                <p>A Great Oportunity</p>
+                <span class="left-container-arrow"></span>
+            </div>
+        </div>
+        <!-- ENSAM -->
+        <div class="container-about right-container">
+            <div class="divYearRight">2020</div>
+            <div class="round-right"></div>
+            <div class="text-box">
+                <img src="src/logos/ensam_colored.png" class="logo_main">
+                <h2>Electromechanical Engineering Degree</h2>
+                <small>ENSAM - Méknes</small>
+                <div class="ensam-grid-details">
+                    <div class="ensam-projects">
+                        <img src="src/icons/worker.png" alt="" class="icons">
+                        <button class="button_ensam" data-bs-toggle="modal" data-bs-target="#myModal">Projects</button>
+                    </div>
+                    <div class="ensam-paraScolaire">
+                        <img src="src/icons/guitarist.png" alt="" class="icons">
+                        <button class="button_ensam" data-bs-toggle="modal"
+                            data-bs-target="#modalParascolaire">Parascolaire</button>
+                    </div>
+                    <div class="ensam-internships">
+                        <img src="src/icons/internship.png" alt="" class="icons">
+                        <button class="button_ensam" data-bs-toggle="modal"
+                            data-bs-target="#internshipsEnsam">Internships</button>
+                    </div>
+                </div>
+
+                <span class="right-container-arrow"></span>
+            </div>
+        </div>
+        <!-- PHD -->
+        <div class="container-about left-container">
+            <div class="divYearLeft">2022</div>
+            <div class="round-left"></div>
+            <div class="text-box">
+                <img src="src/logos/ensam_colored.png" class="logo_main">
+                <h2>PHD Studies</h2>
+                <small>ENSAM - Méknes</small>
+                <p>Design and Conception of IoT bateryless Sensors. </p>
+                <span class="left-container-arrow"></span>
+            </div>
+        </div>
+        <!-- ARKx & JobinTech -->
+        <div class="container-about right-container">
+            <div class="divYearRight">2023</div>
+            <div class="round-right"></div>
+            <div class="text-box">
+                <img src="src/logos/arkx_colored.png" class="logo_main">
+                <img src="src/logos/JobInTech_colored.png" class="logo_main">
+
+                <h2>Fullstak Java Developer</h2>
+                <small>ARKx Academy</small>
+                <div class="lang-grid">
+                    <div class="lang">
+                        <img class="logos_languages" src="src/languages/HTML.png" alt="">
+                    </div>
+                    <div class="lang">
+                        <img class="logos_languages" src="src/languages/css.png" alt="">
+                    </div>
+                    <div class="lang">
+                        <img class="logos_languages" src="src/languages/js.png" alt="">
+                    </div>
+                    <div class="lang">
+                        <img class="logos_languages" src="src/languages/TS.png" alt="">
+                    </div>
+                    <div class="lang">
+                        <img class="logos_languages" src="src/languages/angular.png" alt="">
+                    </div>
+                    <div class="lang">
+                        <img class="logos_languages" src="src/languages/spring.png" alt="">
+                    </div>
+                    <div class="lang">
+                        <img class="logos_languages" src="src/languages/SQL.png" alt="">
+                    </div>
+                </div>
+                <div class="dev-grid-details">
+                    <div class="dev-projects">
+                        <img src="src/icons/project-management.png" alt="" class="icons">
+                        <button class="button_dev">Projects</button>
+                    </div>
+                    <div class="dev-activities">
+                        <img src="src/icons/guitarist.png" alt="" class="icons">
+                        <button class="button_dev" data-bs-toggle="modal"
+                            data-bs-target="#activitiesARKX">Activities</button>
+                    </div>
+                    <div class="dev-internships">
+                        <img src="src/icons/internship.png" alt="" class="icons">
+                        <button class="button_dev">Internships</button>
+                    </div>
+                </div>
+
+                <span class="right-container-arrow"></span>
+            </div>
+        </div>
+
+        <div class="round-last"></div>
+
+    </div>
+
+    <!-- Today -->
+    <div id="contact-me-section" class="container-contact-me">
+        <div class="divYearCenter">Today</div>
+        <div class="round-center"></div>
+        <div class="text-box" style="margin-bottom: 20px;border: 2px solid rgb(4, 132, 0);;">
+            <h3>Let's Create This Section Together</h3>
+            <p>And Build the Future of Our Collaboration</p>
+
+
+            <div class="container-likedin-form">
+                <div class="linkedin">
+                    <img src="src/icons/linkedIN.png" alt="" class="liked-in-qr">
+                    <div class="social-media">
+                        <i class="fab fa-linkedin fa-2x social-icon"></i>
+                        <i class="fab fa-github-square fa-2x social-icon"></i>
+                        <i class="fas fa-envelope-square fa-2x social-icon"></i>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <!-- Wrapper container -->
+                    <div class="container py-4">
+
+                        <!-- Bootstrap 5 starter form -->
+                        <form id="contactForm">
+
+                            <!-- Name input -->
+                            <div class="mb-3">
+                                <input class="form-control" id="name" type="text" placeholder="Full Name"
+                                    data-sb-validations="required" />
+                                <div class="invalid-feedback" data-sb-feedback="name:required">Name is required.
+                                </div>
+                            </div>
+
+                            <!-- Email address input -->
+                            <div class="mb-3">
+                                <input class="form-control" id="emailAddress" type="email" placeholder="Email Address"
+                                    data-sb-validations="required, email" />
+                                <div class="invalid-feedback" data-sb-feedback="emailAddress:required">Email
+                                    Address
+                                    is required.</div>
+                                <div class="invalid-feedback" data-sb-feedback="emailAddress:email">Email
+                                    Address
+                                    Email is not valid.</div>
+                            </div>
+
+                            <!-- Message input -->
+                            <div class="mb-3">
+                                <textarea class="form-control" id="message" type="text" placeholder="Message"
+                                    style="height: 10rem;" data-sb-validations="required"></textarea>
+                                <div class="invalid-feedback" data-sb-feedback="message:required">Message is
+                                    required.</div>
+                            </div>
+
+                            <!-- Form submissions success message -->
+                            <div class="d-none" id="submitSuccessMessage">
+                                <div class="text-center mb-3">Form submission successful!</div>
+                            </div>
+
+                            <!-- Form submissions error message -->
+                            <div class="d-none" id="submitErrorMessage">
+                                <div class="text-center text-danger mb-3">Error sending message!</div>
+                            </div>
+
+                            <!-- Form submit button -->
+                            <div class="d-grid">
+                                <button class="btn btn-success btn-lg" type="submit">Submit</button>
+                            </div>
+
+                        </form>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <!-- Pop Up Projects ENSAM-->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="projectsEnsam" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Projects</h5>
+                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+
+                    <div class="buttons-navigation" style="text-align: center; margin-top: 10px;">
+                        <button class="tab" onclick="openTab(event, 'Category1')"
+                            class="btn btn-secondary">Overview</button>
+                        <button class="tab" onclick="openTab(event, 'Category2')">Technologies Used</button>
+                    </div>
+                    <div id="Category1" class="tabcontent" style="text-align: center;">
+                        <img src="src/photos/IoT-Project.png" alt=""
+                            style="width: 80%; margin-top: 10px;margin-bottom: 5%;">
+                        <h3> IoT System Using Node-RED</h3>
+                    </div>
+                    <div id="Category2" class="tabcontent"
+                        style="padding-left: 10%;padding-right: 10%;padding-top: 5%;">
+                        <p>
+                            + Operating System: Linux Ubuntu 16.04 LTS (64-bit).
+                            <br>+ Platform: Node-RED.
+                            <br>+ Database Management: XAMPP (phpMyAdmin).
+                            <br>+ Communication with ESP8266: MQTT broker (mosquitto).
+                            <br>+ Domain Name Mapping to Server: Nginx.
+                            <br><br>
+                            This project taught me a lot and fuels my excitement for making technology work
+                            better for everyone.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Pop Up Parascolaire ENSAM-->
+    <div class="modal fade" id="modalParascolaire" tabindex="-1" role="dialog" aria-labelledby="projectsEnsam"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Social Club || ENSAM - MEKNES</h5>
+                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+
+                    <div id="Category3" class="tabcontent" style="text-align: center;">
+                        <img src="src/logos/club-social-logo.jpg" alt="" style="width: 30%; margin-top: 10px; ">
+                        <h3> Media Cell Leader</h3>
+                        <p style="text-align: left; padding: 50px;">
+
+                            + Created advertising posters using Adobe Photoshop and Illustrator.
+                            <br>+ Designed t-shirts.
+                            <br>Organized events:
+                            <br>+ Orphan Day.
+                            <br>+ Renovation of Mejjat Primary School (Meknes).
+                        </p>
+                        <img src="src/photos/social-1.jpg" alt=""
+                            style="width: 100%; margin-top: 10px; padding-left: 5px; padding-right: 5px;">
+                        <img src="src/photos/social-2.jpg" alt=""
+                            style="width: 100%; margin-top: 10px; padding-left: 5px; padding-right: 5px;">
+                        <img src="src/photos/painting.png" alt=""
+                            style="width: 100%; margin-top: 10px; padding-left: 5px; padding-right: 5px;">
+                        <img src="src/photos/school-social.png" alt=""
+                            style="width: 100%; margin-top: 10px; padding-left: 5px; padding-right: 5px;">
+
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Pop Up Internship ENSAM-->
+    <div class="modal fade" id="internshipsEnsam" tabindex="-1" role="dialog" aria-labelledby="internshipsEnsam"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Internships || ENSAM - MEKNES</h5>
+                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+
+                    <div id="Category1-internship" class="tabcontent" style="text-align: center;">
+                        <img src="src/logos/OCP_Group.svg.png" alt="" style="width: 30%; margin-top: 10px; ">
+                        <h3> OCP - Khoribga</h3>
+                        <p>Digitalization and Modernization of ES Vertical Lathe Machine - Electromechanical Engineer
+                        </p>
+
+                        <img src="src/logos/2560px-LafargeHolcim_logo.svg.png" alt=""
+                            style="width: 30%; margin-top: 10px; ">
+                        <h3></h3>
+                        <p>Automation System Migration Project - Automation Technician </p>
+                        <img src="src/logos/Logo_ONCF.svg.png" alt="" style="width: 30%; margin-top: 10px; ">
+                        <h3> ONCF - Meknes</h3>
+                        <p>Functional Specification Review and Technical Drawing Enhancement Intern </p>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!------------------------------- Pop Up ARKx-->
+
+    <!-- Pop Up Projects Arkx-->
+    <div class="modal fade" id="projectsARKX" tabindex="-1" role="dialog" aria-labelledby="internshipsEnsam"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Projects || ARKx</h5>
+                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+
+                    <!------ HERE   -->
+
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Pop Up Activities Arkx-->
+    <div class="modal fade" id="activitiesARKX" tabindex="-1" role="dialog" aria-labelledby="activitiesARKX"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Activities || ARKx</h5>
+                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+
+                    <!------ HERE   -->
+                    <div id="Category1-activities-arkx" class="tabcontent" style="text-align: center;">
+                        <h3> Integration Day </h3>
+                        <img src="src/photos/ark-x-1.jpg" alt="" style="width: 100%; margin-top: 10px; ">
+                        <img src="src/photos/arkx-activity-2.jpg" alt="" style="width: 100%; margin-top: 10px; ">
+                      
+                        <img src="src/photos/arkx-activities2.jpg" alt="" style="width: 100%; margin-top: 10px; ">
+                        <img src="src/photos/Arkx-activities-4.jpg" alt="" style="width: 100%; margin-top: 10px; ">
+                      
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Pop Up Internships Arkx-->
+    <div class="modal fade" id="internshipARKX" tabindex="-1" role="dialog" aria-labelledby="internshipsEnsam"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Activities || ARKx</h5>
+                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+
+                    <!------ HERE   -->
+
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
+        crossorigin="anonymous"></script>
+</body>
+<footer>
+    <div class="footer-credits">
+        <p style="text-align: center;">Made with Love By <a href="https://www.linkedin.com/in/mustapha-madani">Mustapha.</a> </p>
+    </div>
+</footer>
+</html>
